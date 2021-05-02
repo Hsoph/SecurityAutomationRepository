@@ -5,11 +5,11 @@ lengthofpassword = input('Requested length: ')
 lengthofpassword = int(lengthofpassword)
 print('See below: ')
 passwordtextdocument = open('supersecurepassworddocument.txt', 'w')
-for p in range(lengthofpassword):
+for a in range(lengthofpassword):
     password = ''
-    for c in range(lengthofpassword):
+    for b in range(lengthofpassword):
         password = ""
-        password += random.choice(password_characters)
+        password = random.choice(password_characters)
     print (password)
     passwordtextdocument.write(password)
 passwordtextdocument.close()
