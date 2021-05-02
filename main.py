@@ -1,6 +1,6 @@
 import random
 
-chars = '!@#$%^&*()-=_+`~[]{]\|;:,<.>/?ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890'
+password_characters = '!@#$%^&*()-=_+`~[]{]\|;:,<.>/?ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890'
 
 print("You past passwords may have been compromised.  Generate something stronger below.")
 
@@ -14,7 +14,7 @@ for p in range(passwordLength):
     password = ''
     for c in range(passwordLength):
         password = ""
-        password += random.choice(chars)
+        password += random.choice(password_characters)
     print (password)
     passwordtextdocument.write(password)
 passwordtextdocument.close()
